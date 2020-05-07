@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
+.bg{
+  background-color: hue($color: #000000);
+}
+
 .dashboard-posts {
   margin: 1em 5em 1em 5em;
 }
