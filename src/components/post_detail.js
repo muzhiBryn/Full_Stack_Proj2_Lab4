@@ -69,10 +69,10 @@ class PostDetail extends Component {
     let title, tags, content, coverUrl,
       editButton, titleDiv, tagsDiv, coverUrlDiv, contentDiv;
     if (this.props.post) {
-      title = this.state.title ? this.state.title : this.props.post.title;
-      tags = this.state.tags ? this.state.tags : this.props.post.tags;
-      content = this.state.content ? this.state.content : this.props.post.content;
-      coverUrl = this.state.coverUrl ? this.state.coverUrl : this.props.post.coverUrl;
+      title = this.state.title != null ? this.state.title : this.props.post.title;
+      tags = this.state.tags != null ? this.state.tags : this.props.post.tags;
+      content = this.state.content != null ? this.state.content : this.props.post.content;
+      coverUrl = this.state.coverUrl != null ? this.state.coverUrl : this.props.post.coverUrl;
     }
 
     if (this.state.isEditing) {
