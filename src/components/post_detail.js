@@ -116,7 +116,7 @@ class PostDetail extends Component {
     return (
       <div>
         <CardDeck className="post-detail">
-          <Card>
+          <Card className="my-card" bg="light">
             <Card.Body>
               <div>
                 <Button onClick={this.saveAndBack}><i className="fas fa-arrow-circle-left" /></Button>

@@ -21,6 +21,7 @@ const store = createStore(reducers, {}, compose(
 ReactDOM.render(
   <Provider store={store}>
     <App />
+
   </Provider>,
   document.getElementById('main'),
 );

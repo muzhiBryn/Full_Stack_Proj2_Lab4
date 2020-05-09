@@ -1,7 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 
-.bg{
-  background-color: hue($color: #000000);
+.top{
+  background-color:  #fb9b2b; /* Standard syntax (must be last) */
+
 }
 
 .dashboard-posts {
@@ -10,8 +11,14 @@
 
 .my-card {
   // position: absolute;
+  // background-color: #FDF06F;
   width: 30%;
   margin: 2rem;
+  border: none;
+}
+
+.my-card a {
+  color: white;
 }
 
 .my-card img{
@@ -39,9 +46,12 @@ i {
   display: none;
 }
 
-
+.createPP{
+  background-color: #f2f2f2;
+}
 
 .post-detail {
+  
   margin: 5em 10em 5em 10em;
 }
 
@@ -57,3 +67,5 @@ i {
 .post-detail .content-area{
   height: 5em;
 }
+
+

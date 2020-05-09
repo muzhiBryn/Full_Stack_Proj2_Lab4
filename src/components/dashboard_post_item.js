@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 const DashboardPostItem = (props) => {
   return (
-    <Card className="my-card">
+    <Card className="my-card" bg="warning">
       <a href={`/post/${props.post.id}`}>
         <Card.Body>
           <img src={props.post.coverUrl} alt="" />
