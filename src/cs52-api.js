@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const ROOT_URL = 'https://platform.cs52.me/api';
+// const ROOT_URL = 'https://platform.cs52.me/api';
+const ROOT_URL = 'https://lab5-1.herokuapp.com/api';
 const API_KEY = '?key=JIALING';
 
 export const fetchPostsApi = () => {
