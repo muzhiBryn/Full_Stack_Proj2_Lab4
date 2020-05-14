@@ -3,8 +3,11 @@ import {
   BrowserRouter as Router, Route, Switch,
 } from 'react-router-dom';
 import Dashboard from './dashboard';
+import SignUp from './sign_up';
+import SignIn from './sign_in';
 import PostCreate from './post_create';
 import PostDetail from './post_detail';
+import PrivateRoute from './private_route';
 
 
 const FallBack = (props) => {
@@ -17,7 +20,9 @@ const App = (props) => {
       <div>
         <Switch>
           <Route exact path="/" component={Dashboard} />
-          <Route path="/new" component={PostCreate} />
+          <Route exact path="/sign-up" component={SignUp} />
+          <Route exact path="/sign-in" component={SignIn} />
+          <PrivateRoute path="/new" component={PostCreate} />
           <Route exact path="/post/:id" component={PostDetail} />
           <Route component={FallBack} />
         </Switch>

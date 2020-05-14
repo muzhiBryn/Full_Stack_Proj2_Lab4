@@ -5,6 +5,7 @@ import TextareaAutosize from 'react-textarea-autosize';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { createPost } from '../actions';
+import TopNavBar from './top_navbar';
 
 
 class PostCreate extends Component {
@@ -55,6 +56,7 @@ class PostCreate extends Component {
 
     return (
       <div>
+        <TopNavBar />
         <CardDeck className="post-detail">
           <Card className="my-card" bg="light">
             <Card.Body>
