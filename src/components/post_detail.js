@@ -79,7 +79,9 @@ class PostDetail extends Component {
       tags = this.state.tags != null ? this.state.tags : this.props.post.tags;
       content = this.state.content != null ? this.state.content : this.props.post.content;
       coverUrl = this.state.coverUrl != null ? this.state.coverUrl : this.props.post.coverUrl;
-      authorEmail = this.props.post.author.email;
+      if (this.props.post && this.props.post.author) {
+        authorEmail = this.props.post.author.email;
+      }
       if (coverUrl) {
         coverImgDiv = <img src={coverUrl} alt="" />;
       }
